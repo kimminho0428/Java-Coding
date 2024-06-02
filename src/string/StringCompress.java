@@ -1,25 +1,5 @@
 package string;
 
-<<<<<<< HEAD
-import java.util.ArrayList;
-import java.util.List;
-
-public class StringCompress {
-    public int solution(String s) {
-        int answer = s.length();
-        int cnt = 1;
-        for(int i=1; i<=s.length()/2; i++){
-            StringBuilder sb = new StringBuilder();
-            String prev = s.substring(0, i);
-
-            for(int j=i; j<=s.length(); j+=i){
-                int endIdx = Math.min((i + j), s.length());
-                String sub = s.substring(j, endIdx);
-                if(prev.equals(sub)){
-                    cnt++;
-                } else {
-                    sb.append((cnt >= 2) ? cnt+prev:prev);
-=======
 public class StringCompress {
     public int solution(String s) {
         int answer = s.length();
@@ -38,21 +18,16 @@ public class StringCompress {
 
                 //이전 상태와 동일하다면 반복 횟수 증가
                 if(prev.equals(sub)) cnt++;
-                //다른 문자열이 나왔다면 상태 초기화
+                    //다른 문자열이 나왔다면 상태 초기화
                 else{
                     sb.append((cnt >= 2) ? cnt+prev : prev);
->>>>>>> origin/master
                     prev = sub;
                     cnt = 1;
                 }
             }
-<<<<<<< HEAD
-            sb.append(prev);
-=======
             // 마지막 문자 붙이기
             sb.append(prev);
             //결과
->>>>>>> origin/master
             answer = Math.min(answer, sb.length());
         }
         return answer;
