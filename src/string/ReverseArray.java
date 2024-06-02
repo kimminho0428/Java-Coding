@@ -17,10 +17,10 @@ public class ReverseArray {
         return answer;
     }
 
-    public static void main(String[] args) {
-        ReverseArray ra = new ReverseArray();
-        System.out.println(Arrays.toString(ra.solution(12345)));
-    }
+//    public static void main(String[] args) {
+//        ReverseArray ra = new ReverseArray();
+//        System.out.println(Arrays.toString(ra.solution(12345)));
+//    }
 
 
 
