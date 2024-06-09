@@ -5,14 +5,14 @@ import java.util.Scanner;
 
 public class ReverseArray {
     public int[] solution(long n) {
-        String s = String.valueOf(n);
-        StringBuilder sb = new StringBuilder(s);
-        sb = sb.reverse();
-        String[] ss = sb.toString().split("");
 
-        int[] answer = new int[ss.length];
-        for (int i=0; i<ss.length; i++) {
-            answer[i] = Integer.parseInt(ss[i]);
+        String str = String.valueOf(n);
+        StringBuilder sb = new StringBuilder(str);
+        sb = sb.reverse();
+        String[] split = sb.toString().split("");
+        int[] answer = new int[split.length];
+        for(int i=0; i<split.length; i++){
+            answer[i] = Integer.parseInt(split[i]);
         }
         return answer;
     }

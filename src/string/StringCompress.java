@@ -18,7 +18,7 @@ public class StringCompress {
 
                 //이전 상태와 동일하다면 반복 횟수 증가
                 if(prev.equals(sub)) cnt++;
-                //다른 문자열이 나왔다면 상태 초기화
+                    //다른 문자열이 나왔다면 상태 초기화
                 else{
                     sb.append((cnt >= 2) ? cnt+prev : prev);
                     prev = sub;
