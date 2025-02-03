@@ -12,7 +12,7 @@ public class EntryService {
 
     public long solution(int n, int[] times) {
         long start = 1;
-        long end = 1000000000L;
+        long end = 1000000000000000000L;
 
         while(end > start){
             long t = (start + end) / 2;
